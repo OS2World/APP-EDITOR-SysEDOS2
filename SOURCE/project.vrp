@@ -1,0 +1,15 @@
+VX-REXX OS/2 V2.14 Build B3
+VRX: Window1.VRX
+VRX: DirDialg.VRX
+MacroPath: VRM:D:\Prog\VXREXX\Projects\Systemeditor
+EXEPath: D:\Prog\VXREXX\Projects\Systemeditor\SysedOS2.EXE
+RunParameters: 
+RunDirectory: D:\Prog\VXREXX\Projects\Systemeditor
+VRXWindow: __VREMainWindow,1,1355,3553,9380,10344
+VRXWindow: __VREFileListWindow,1,8462,301,2665,3358
+VRXWindow: __VRESectionListWindow,1,3463,181,4607,3478
+VRXWindow: __VREToolsWindow,1,2319,11623,4044,1693
+VRXWindow: __VREWindListWindow,1,542,301,2650,3150
+UserFile: 1
+UserWindow: Window1,1
+UserWindow: SETUP,1

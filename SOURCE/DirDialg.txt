@@ -1,0 +1,78 @@
+This is DirDialog V1.0. (C) 1994 by Ralf G. R. Bergs
+
+E-mail:     rabe@pool.informatik.rwth-aachen.de
+Snail mail: Hueckeswagener Str. 42, 51647 Gummersbach, FR of Germany
+Phone/fax:  +49 2261 21968
+
+
+Purpose:
+========
+DirDialg() is a dialog similar to the system file dialog. In contrast
+to the latter it is NOT used to select individual files, but a directory
+from a list.
+
+
+"Foreword:"
+===========
+This is one of the first little programs I created with VX-REXX (in
+fact, created with REXX at all). Therefore please be gentle with me. ;-)
+Of course, comments, suggestions (especially how to improve the speed
+of the "VRDir" stuff used to fill the directory list with directory
+names), bug reports (or even patches!) are highly appreciated.
+
+I used VX-REXX version 2.0 patchlevel B to develop this, but I guess it
+could work with 1.x too. (If someone verifies this, please TELL ME
+about it!)
+
+There's a little "demo program" that runs "DirDialog" and displays
+the selected directory on exit in a console window. To run DEMO.EXE,
+you need the VX-REXX runtime library VROBJ.DLL.
+
+* BTW, "DirDialog" is postcard-ware. If you use it in an application that *
+* is NOT only used by yourself (i.e. if you distribute it to others),     *
+* you MUST register it. To register, please send me a postcard of your    *
+* home town, or my lawyers will sue you. (Nah, just kiddin' ;-)           *
+
+
+Installation:
+============
+To install, just add the line
+
+	VRX: DirDialg.VRX
+
+to your projects .VRP file, below the other "VRX:" lines. That's all!
+
+
+Usage:
+=====
+
+dir = DirDialg( VRWindow(), caption, startdir )
+
+    caption:  the dialog window's title (default: "Select a directory")
+    startdir: the directory initially displayed when you call DirDialg()
+                (default: the current working directory at the time your
+                application was started)
+    dir:      either a directory you selected or "" if you pressed
+                "Cancel."
+
+
+License:
+=======
+"This library is free software; you can redistribute it and/or
+modify it under the terms of the GNU Library General Public
+License as published by the Free Software Foundation; either
+version 2 of the License, or (at your option) any later version.
+
+This library is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+Library General Public License for more details.
+
+You should have received a copy of the GNU Library General Public
+License along with this library; if not, write to the Free
+Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA."
+
+
+History:
+=======
+08/21/94    First public release V1.0
